@@ -5,10 +5,10 @@ var interval = 2500;
         var image_dir = ""
         var ImageNum = 0;
         imageArray = new Array();
-        imageArray[ImageNum++] = new imageItem(image_dir + "New_Img/01.jpg");
-        imageArray[ImageNum++] = new imageItem(image_dir + "New_Img/02.jpg");
-        imageArray[ImageNum++] = new imageItem(image_dir + "New_Img/03.jpg");
-        imageArray[ImageNum++] = new imageItem(image_dir + "New_Img/04.jpg");
+        imageArray[ImageNum++] = new imageItem(image_dir + "NEW_IMG/01.jpg");
+        imageArray[ImageNum++] = new imageItem(image_dir + "NEW_IMG/02.jpg");
+        imageArray[ImageNum++] = new imageItem(image_dir + "NEW_IMG/03.jpg");
+        imageArray[ImageNum++] = new imageItem(image_dir + "NEW_IMG/04.jpg");
 
         var number_of_image = imageArray.length;
         function imageItem(image_location) {
