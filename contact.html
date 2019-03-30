@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="shortcut icon" href="New_Img/icon.png" />
+    <script src="JavaScript/code.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home &#9662;</a>
+                        <ul>
+                            <li><a href="about.html">About EPATA</a></li>
+                            <li class="current"><a href="contact.html">Contact Me</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="root.html">How to Root</a></li>
+                    <li><a href="su.html">SuperUser App</a></li>
+                    <li><a href="recovery.html">Custom Recovery</a></li>
+                    <li><a href="rom.html">Flashing</a></li>
+                    <li><a href="definition.html">Definitions</a></li>
+                </ul>
+            </nav>
+        </header><!-- End of header div -->
+        <article class="contact">
+            <p class="contactMe">Contact Me</p>
+            <p>Feel free to contact me with any questions you may have. I will answer to the best of my knowledge, or point you in the right direction.</p>
+                    
+            <div id="padds">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Name: <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ernie Phillips<br /><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;Email:<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:erniephillips.android@gmail.com">erniephillips.android@gmail.com</a>
+            </div>
+        </article>
+        
+
+
+        <form name="form1" id="frmMain" action="JavaScript:ProcessForm();" method="post" onsubmit="JavaScript:return ValidateForm(this);">
+        <fieldset id="field1" name="field1">
+	        <legend>Contact Form</legend>
+                <p class="label">Topic: <select class="dropBox" name="txt_reason_contact" id="txt_reason_contact">
+                    <option value="blank">Please select a topic...</option>
+                    <option value=" Praise the Developer ">Praise the Developer</option>
+                    <option value=" Gripe to the Developer ">Gripe to the Developer</option>
+                    <option value=" Suggestion for the Developer ">Suggestion for the Developer</option>
+                    <option value=" Bug the Developer ">Bug the Developer</option>
+                </select>
+                </p>
+                <p class="label"><label for="txt_Prefix">Prefix:</label> 
+                    <input 
+                        class="box"
+                        name="txt_Prefix"  
+                        id="txt_Prefix"
+                    />
+		        </p>
+                <p class="label"><label for="txt_First_Name"><span class="ast">* </span>First Name:</label> 
+                    <input 
+                        class="box"
+                        name="txt_First_Name"  
+                        id="txt_First_Name"
+                    />
+		        </p>
+                <p class="label"><label for="txt_Last_Name"><span class="ast">* </span>Last Name: </label> 
+                    <input 
+                        class="box"
+                        name="txt_Last_Name"  
+                        id="txt_Last_Name"
+                    />
+                </p>
+                <p class="label"><label for="txt_Phone"><span class="ast">* </span>Phone Number: </label> 
+                    <input 
+                        class="box"
+                        name="txt_Phone"  
+                        id="txt_Phone"
+                    />
+                </p>
+                <p class="label"><label for="txt_Email"><span class="ast">* </span>Email: </label> 
+                    <input 
+                        class="box" 
+                        type="email"
+                        name="txt_Email"  
+                        id="txt_Email"
+                        placeholder="you@yourdomain.com" 
+                    />
+                </p>
+
+                <p class="label"><label for="txt_Comments" id="comments"><span class="ast"></span>Comments: </label> 
+                    <textarea 
+                        class="tArea"
+                        cols="30" 
+                        rows="10" 
+                        name="txt_Comments"  
+                        id="txt_Comments"
+                        >
+                    </textarea>
+                </p>
+                <div id="buttonCenter">
+                    <input 
+                        type="submit"
+                        id="btnSubmit"
+                        name="btnSubmit"
+                        value="Check Textbox" 
+                    />
+                    &nbsp;&nbsp;
+                    <input 
+                        type="reset"
+                        id="btnReset"
+                        name="btnReset"
+                        value="Reset"
+                    />
+                </div>
+        </fieldset>
+    </form>
+
+
+
+        <footer>
+            <p class="alignLeft">EPATA</p>
+            <p class="alignRight">All Things Android</p>
+        </footer>
+
+    </div><!-- End of wrapper div -->
+</body>
+</html>

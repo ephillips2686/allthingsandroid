@@ -1,1 +1,77 @@
-Hello World
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="shortcut icon" href="NEW_IMG/icon.png" />
+    <script src="JavaScript/code.js"></script>
+</head>
+<body onload="rotateImage('rImage')">
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home &#9662;</a>
+                        <ul>
+                            <li><a href="about.html">About EPATA</a></li>
+                            <li><a href="contact.html">Contact Me</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="root.html">How to Root</a></li>
+                    <li><a href="su.html">SuperUser App</a></li>
+                    <li><a href="recovery.html">Custom Recovery</a></li>
+                    <li><a href="rom.html">Flashing</a></li>
+                    <li><a href="definition.html">Definitions</a></li>
+                </ul>
+            </nav>
+        </header><!-- End of header div -->
+	<div>
+        <img name="rImage" id="rImage" src="NEW_IMG/02.jpg" width="968" height="363" alt="slideShow" />
+        <table id="buttonTable">
+            <tbody>
+                <tr>
+                    <td><a class="buttonPrevious" href="#" onclick="prevImage('rImage'); clearTimeout(timerID)"></a><a class="buttonPause" href="#" onclick="clearTimeout(timerID)"></a><a class="buttonPlay" href="#" onclick="rotateImage('rImage')"></a><a class="buttonForward" href="#" onclick="rotateImage('rImage'); clearTimeout(timerID)"></a></td>
+                </tr>
+            </tbody>
+        </table>
+                  
+        
+    </div>
+        <article>
+                <div id="bodyLeft">
+                    <h2>Services</h2>
+                    <ul>
+                        <li>In this website you will learn:</li>
+                        <li>the benefits of rooting your phone</li>
+                        <li>how the superuser.apk interacts in the OS</li>
+                        <li>what a custom recovery is and how to use it</li>
+                        <li>how to flash a custom ROM/Kernel/Radio</li>
+                        <li>Android terminology</li>
+                    </ul>
+                </div><!-- End of body left -->
+
+                <div id="bodyRight">
+                    <h2>Welcome to All Things Android</h2>
+                        <p>Learn about different things that can be done to Android phones.</p>
+                        <p>Why stay restricted to the carriers way of operation?</p>
+                        <p>Have the Android phone that outshines the rest!!!</p>
+                        <p>Follow the experts at: <br /><a href="https://www.xda-developers.com" target="_blank"><img src="New_Img/xda.png" class="xda" alt="xda"/></a></p>
+                        <img src="New_Img/blgrAnd.jpg" class="blgr" alt="blgr"/>
+                </div><!-- End of body right -->
+            </article><!-- End of body part -->
+
+            <div id="centerLine"></div>
+        
+        <div id="centerBottom"><img src="New_Img/Light-Android-Wallpaper.jpg" alt="Android"/></div>
+        <div id="centerLineDiv"></div>
+        <div id="disclaimer">***DISCLAIMER: PERFORM AT YOUR OWN RISK. I AM NOT RESPONSIBLE<br />FOR ANY DAMAGE OR BRICK OF CELLULAR DEVICE.***<br />*****THIS WILL <span class="void">VOID</span> YOUR WARRANTY.*****</div>
+        <footer>
+            <p class="alignLeft">EPATA</p>
+            <p class="alignRight">All Things Android</p>
+        </footer>
+        
+        </div><!-- End of wrapper -->
+</body>
+</html>
